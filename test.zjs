@@ -1,13 +1,4 @@
 set_color 0 101 164;
-circle 500 300 200;
-circle 500 300 201;
-circle 500 300 202;
-circle 500 300 203;
-circle 500 300 204;
-circle 500 300 205;
-circle 500 300 206;
-circle 500 300 207;
-circle 500 300 208;
 circle 500 300 209;
 set_color 255 255 255;
 line 700 160 500 160;
@@ -51,3 +42,4 @@ line 503 480 644 200;
 line 502 480 643 200;
 line 501 480 642 200;
 line 500 480 641 200;
+end;

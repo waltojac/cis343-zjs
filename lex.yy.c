@@ -664,8 +664,7 @@ YY_DECL
 #line 8 "zoomjoystrong.lex"
 
 
-
-#line 669 "lex.yy.c"
+#line 668 "lex.yy.c"
 
 	if ( !(yy_init) )
 		{
@@ -750,66 +749,66 @@ do_action:	/* This label is used only to access EOF actions. */
 
 case 1:
 YY_RULE_SETUP
-#line 11 "zoomjoystrong.lex"
-{yylval.str = strdup(yytext); return END;}
+#line 10 "zoomjoystrong.lex"
+{printf("\nShutting down...\n"); yylval.str = strdup(yytext); return END;}
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
-#line 12 "zoomjoystrong.lex"
+#line 11 "zoomjoystrong.lex"
 {return END_STATEMENT;}
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
-#line 13 "zoomjoystrong.lex"
+#line 12 "zoomjoystrong.lex"
 {yylval.str = strdup(yytext); return POINT;}
 	YY_BREAK
 case 4:
 YY_RULE_SETUP
-#line 14 "zoomjoystrong.lex"
+#line 13 "zoomjoystrong.lex"
 {yylval.str = strdup(yytext); return LINE;}
 	YY_BREAK
 case 5:
 YY_RULE_SETUP
-#line 15 "zoomjoystrong.lex"
+#line 14 "zoomjoystrong.lex"
 {yylval.str = strdup(yytext); return CIRCLE;}
 	YY_BREAK
 case 6:
 YY_RULE_SETUP
-#line 16 "zoomjoystrong.lex"
+#line 15 "zoomjoystrong.lex"
 {yylval.str = strdup(yytext); return RECTANGLE;}
 	YY_BREAK
 case 7:
 YY_RULE_SETUP
-#line 17 "zoomjoystrong.lex"
+#line 16 "zoomjoystrong.lex"
 {yylval.str = strdup(yytext); return SET_COLOR;}
 	YY_BREAK
 case 8:
 YY_RULE_SETUP
-#line 18 "zoomjoystrong.lex"
+#line 17 "zoomjoystrong.lex"
 {yylval.i = atof(yytext); return INT;}
 	YY_BREAK
 case 9:
 YY_RULE_SETUP
-#line 19 "zoomjoystrong.lex"
+#line 18 "zoomjoystrong.lex"
 {yylval.f = atof(yytext); return FLOAT;}
 	YY_BREAK
 case 10:
 /* rule 10 can match eol */
 YY_RULE_SETUP
-#line 20 "zoomjoystrong.lex"
+#line 19 "zoomjoystrong.lex"
 ; 
 	YY_BREAK
 case 11:
 YY_RULE_SETUP
-#line 21 "zoomjoystrong.lex"
+#line 20 "zoomjoystrong.lex"
 ;				                {printf("\nInvalid input.\n");}
 	YY_BREAK
 case 12:
 YY_RULE_SETUP
-#line 23 "zoomjoystrong.lex"
+#line 22 "zoomjoystrong.lex"
 ECHO;
 	YY_BREAK
-#line 813 "lex.yy.c"
+#line 812 "lex.yy.c"
 case YY_STATE_EOF(INITIAL):
 	yyterminate();
 
@@ -1806,7 +1805,7 @@ void yyfree (void * ptr )
 
 #define YYTABLES_NAME "yytables"
 
-#line 23 "zoomjoystrong.lex"
+#line 22 "zoomjoystrong.lex"
 
 
 

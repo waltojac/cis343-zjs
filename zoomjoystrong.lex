@@ -7,8 +7,7 @@
 
 %%
 
-
-(end)							{yylval.str = strdup(yytext); return END;}
+(end)							{printf("\nShutting down...\n"); yylval.str = strdup(yytext); return END;}
 ;								{return END_STATEMENT;}
 (point)							{yylval.str = strdup(yytext); return POINT;}
 (line)							{yylval.str = strdup(yytext); return LINE;}

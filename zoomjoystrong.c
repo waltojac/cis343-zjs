@@ -23,7 +23,7 @@ void setup(){
 
 	SDL_SetRenderDrawColor( renderer, 255, 255, 255, 255 );
 	SDL_RenderClear( renderer );
-	SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255);	
+	SDL_SetRenderDrawColor( renderer, 0, 0, 0, 255);
 	current.r = 0;
 	current.b = 0;
 	current.g = 0;
@@ -38,7 +38,7 @@ void set_color( int r, int g, int b){
 
 void point( int x, int y ){
 	SDL_SetRenderTarget(renderer, texture);
-	SDL_RenderDrawPoint(renderer, x, y);	
+	SDL_RenderDrawPoint(renderer, x, y);
 	SDL_SetRenderTarget(renderer, NULL);
 	SDL_RenderCopy(renderer, texture, NULL, NULL);
 	SDL_RenderPresent(renderer);
@@ -53,13 +53,12 @@ void line( int x1, int y1, int x2, int y2 ){
 }
 
 void circle(int x, int y, int r){
-	float i;
-	for(i=0; i<2 * 3.14; i+=.01){
+	for(float i=0; i<2 * 3.14; i+=.01){
 		float u = x + r * cos(i);
 		float v = y + r * sin(i);
 		point(u, v);
 	}
-} 
+}
 
 void rectangle(int x, int y, int w, int h){
 	SDL_Rect rect;
